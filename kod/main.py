@@ -108,12 +108,25 @@
 
 #strututu
 
+#PEP8
+#
+# nazwa_zmiennej='costam' #python
+# nazwaZmiennej="costam" #java,C#
+#
+# x='a'
+# tekst="siała baba mak"
+# if x in tekst:
+#     print('tak, jest')
+#
+# x='a'
+# lista=['a','b','c']
+# if x in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
 #3. Niech użytkownik poda jakąś liczbę.
 # Jeśli poda dodatnią to chcemy wyświetlić tę wartość z informacją
 # "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
 # jeśli ujemna to wyświetlamy "wartość ujemna".
 
-#PEP8
-#
-# nazwa_zmiennej='costam' #python
-# nazwaZmiennej="costam" #java,C#
