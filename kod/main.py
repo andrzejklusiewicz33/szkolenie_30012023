@@ -59,6 +59,61 @@
 
 #x=1.3
 
-#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę w kilogramach
+# 2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę w kilogramach
 # i wzrost w metrach, wyliczy i wypisze BMI zaokraglone do 2 miejsc po przecinku
 
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(f'Twoje BMI={bmi}')
+
+# x=10
+# if x==10:
+#     print('x jest równe 10')
+# print('koniec')
+#
+# x=11
+# if x==10:
+#     print('x jest równe 10')
+# print('koniec')
+
+
+# x=10
+# if x==10:
+#     print('x jest równe 10')
+#     print('x jest równe 10')
+#     print('x jest równe 10')
+# print('koniec')
+
+#
+# x=11
+# if x==10:
+#     print('x jest równe 10')
+# else:
+#     print('x NIE jest równe 10')
+# print('koniec')
+
+#
+# x=3
+# if x==1:
+#     print('jeden')
+# elif x==2:
+#     print('dwa')
+# elif x==3:
+#     print('trzy')
+# elif x==4:
+#     print('cztery')
+# else:
+#     print('poza zakresem')
+
+#strututu
+
+#3. Niech użytkownik poda jakąś liczbę.
+# Jeśli poda dodatnią to chcemy wyświetlić tę wartość z informacją
+# "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
+# jeśli ujemna to wyświetlamy "wartość ujemna".
+
+#PEP8
+#
+# nazwa_zmiennej='costam' #python
+# nazwaZmiennej="costam" #java,C#
