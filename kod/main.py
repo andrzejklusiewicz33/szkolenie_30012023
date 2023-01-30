@@ -489,3 +489,67 @@
 
 #13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 #Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+
+# list=[]
+# for x in range(1,11):
+#     list.append(pow(2,x))
+#
+# for e in list:
+#     print(e)
+#
+# lista=[1,2,3,4,5]
+# print(lista[2])
+# print(lista[0:3])
+# lista.insert(3,'dodane')
+# print(lista)
+
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list3=list1+list2
+# print(list3)
+#
+# def funkcja(*args):
+#     pass
+#
+# list1=[1,2,3,4]
+# print(list1)
+# print(*list1)
+#
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list3=[*list1,*list2]
+# print(list3)
+
+
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list3=[list1,list2]
+# print(list3)
+# print(list3[0][2])
+
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list3=[*list1,*list2]
+#
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list3=list1+list2
+#
+#
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list1.extend(list2)
+# print(list1)
+#
+# lista=[1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3]
+# zbior=set(lista)
+# print(zbior)
+#
+# lista=[1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3]
+# obrobione=list(set(lista))
+# print(obrobione)
+
+#14. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+
+
