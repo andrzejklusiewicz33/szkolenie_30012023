@@ -387,15 +387,15 @@
 # print(f"du{chr(120)}pa")
 # print(ord("x"))
 
-#9. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego
+# 9. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego
 # znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
 
 # text=input('dej tekst:\n')
 # print(text.replace(',','').replace('.','').replace('!','').replace('?','').lower())
 
-#Tadeusz
-#Tadeusz.
-#Tadeusz,
+# Tadeusz
+# Tadeusz.
+# Tadeusz,
 
 #
 # text=input('dej tekst:\n')
@@ -414,7 +414,7 @@
 # for line in open(variable,encoding='utf-8'):
 #     print(len(line.strip()),line.strip())
 
-#10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
+# 10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
 
 #
 # file_name=input('podaj nazwę pliku\n')
@@ -433,7 +433,7 @@
 # all=open('tadzio.txt',encoding='utf-8').read()
 # print(all.replace('a','X'))
 
-#11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
+# 11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
 # podanego przez użytkownika w pliku którego nazwę również poda użytkownik.
 #
 # text="siała baba"
@@ -458,12 +458,11 @@
 #       count(  phrase.lower()  ))
 
 
-
-#12.Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
- # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
- #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
- #    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
- #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+# 12.Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+# poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+#  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
+#    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+#  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
 
 # file_name=input('Podaj nazwę pliku w którym chcesz szukać:\n')
 # phrase=input('Podaj frazę którą chcesz znaleźć:\n')
@@ -473,7 +472,7 @@
 #     if phrase.lower() in line.lower():
 #         print(x,line.strip())
 
-#przerwa do 14:20
+# przerwa do 14:20
 
 # lista=[]
 # lista=list()
@@ -487,8 +486,8 @@
 # for e in lista:
 #     print(e,type(e))
 
-#13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
-#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+# 13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+# Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
 
 # list=[]
 # for x in range(1,11):
@@ -549,7 +548,43 @@
 # obrobione=list(set(lista))
 # print(obrobione)
 
-#14. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# 14. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+#
+#
+# import random
+#
+# l1 = []
+# l2 = []
+# for _ in range(10):
+#     l1.append(random.randint(1, 10))
+#     l2.append(random.randint(1, 10))
+# print(l1)
+# print(l2)
+# l3=[*l1,*l2]
+# print(l3)
+# l3=l1+l2
+# print(l3)
+# l1.extend(l2)
+# print(l1)
 
+#List<String> lista=....
+#
+# x=1.5
+# x='whatever'
+# if type(x)==float:
+#     print('przyjmuję')
+# else:
+#     print('nie przyjmuję')
+#
+# l=[]
+# for x in range(1,11):
+#     podlista=[x,x*10]
+#     l.append(podlista)
+#
+# print(l)
+# for e in l:
+#     print(e)
 
+#15. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
