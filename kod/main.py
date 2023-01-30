@@ -410,8 +410,28 @@
 # for line in open('tadzio.txt',encoding='utf-8'):
 #     print(len(line.strip()),line.strip())
 
-variable='tadzio.txt'
-for line in open(variable,encoding='utf-8'):
-    print(len(line.strip()),line.strip())
+# variable='tadzio.txt'
+# for line in open(variable,encoding='utf-8'):
+#     print(len(line.strip()),line.strip())
 
 #10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
+
+#
+# file_name=input('podaj nazwę pliku\n')
+# for line in open(file_name,encoding='utf-8'):
+#     if len(line.strip())>0:
+#         print(line.strip())
+
+
+# file_name=input('podaj nazwę pliku\n')
+# x=0
+# for line in open(file_name,encoding='utf-8'):
+#     x+=1
+#     if len(line.strip())>0:
+#         print(x,line.strip())
+#
+# all=open('tadzio.txt',encoding='utf-8').read()
+# print(all.replace('a','X'))
+
+#11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
+# podanego przez użytkownika w pliku którego nazwę również poda użytkownik.
