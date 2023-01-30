@@ -464,3 +464,28 @@
  #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
  #    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
  #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+
+# file_name=input('Podaj nazwę pliku w którym chcesz szukać:\n')
+# phrase=input('Podaj frazę którą chcesz znaleźć:\n')
+# x=0
+# for line in open(file_name,encoding='utf-8'):
+#     x+=1
+#     if phrase.lower() in line.lower():
+#         print(x,line.strip())
+
+#przerwa do 14:20
+
+# lista=[]
+# lista=list()
+# lista=[1,1,1,1,1,2,2,2,2,2,3,4,5]
+# lista.append(6)
+# lista.append(7)
+# for e in lista:
+#     print(e)
+#
+# lista=[1,2,"nietoperz",['A','B'] ]
+# for e in lista:
+#     print(e,type(e))
+
+#13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
