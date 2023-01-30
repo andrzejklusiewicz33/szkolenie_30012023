@@ -205,6 +205,8 @@
 
 #6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
 #  parzysta czy nieparzysta
-
+#
+# for x in range(1,101,2):
+#     print(x)
 print(11%2)
 print(10%2)
