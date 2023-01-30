@@ -224,5 +224,64 @@
   # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
   # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
   # Kapitalizacja comiesięczna
+#
+# account=100000
+# interest=0.08
+# months=24
+# for m in range(1,months+1):
+#     account=round(account+(account*interest/12),2)
+#     print(m, account)
 
-hajs=100000
+#
+# account=100000
+# interest=-0.20
+# months=60
+# for m in range(1,months+1):
+#     account=round(account+(account*interest/12),2)
+#     print(m, account)
+
+#
+# while 1==1:
+#     print('działam....')
+
+#
+# while True:
+#     print('działam....')
+#
+# x=2
+# while x<1000:
+#     x=x*2
+#     print(x)
+#
+# i=i+1
+# i+=1
+# #i++
+# x=2
+# while x<1000:
+#     print(x)
+#     x*=2
+#
+# import random
+# print(random.random())
+# print(random.randint(1,100))
+#
+# def funkcja():
+#     print('siema!')
+#
+# funkcja()
+#
+# import my_lib
+# my_lib.funkcja_w_innnym_module()
+
+#
+# import my_lib as ml
+# ml.funkcja_w_innnym_module()
+
+#
+# from my_lib import funkcja_w_innnym_module
+# funkcja_w_innnym_module()
+
+#import requests
+
+#8. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+#od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
