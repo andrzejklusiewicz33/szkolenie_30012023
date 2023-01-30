@@ -24,8 +24,8 @@
 # owoc=input('podaj ulubiony owoc:\n')
 # print(f'Twój ulubiony owoc to {owoc}')
 
-#1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
-#wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+# 1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
+# wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
 #
 # first_name=input('podaj imię:\n')
 # last_name=input('podaj nazwisko:\n')
@@ -57,7 +57,7 @@
 # except ValueError:
 #     print('podales cos innego niz liczba')
 
-#x=1.3
+# x=1.3
 
 # 2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę w kilogramach
 # i wzrost w metrach, wyliczy i wypisze BMI zaokraglone do 2 miejsc po przecinku
@@ -106,9 +106,9 @@
 # else:
 #     print('poza zakresem')
 
-#strututu
+# strututu
 
-#PEP8
+# PEP8
 #
 # nazwa_zmiennej='costam' #python
 # nazwaZmiennej="costam" #java,C#
@@ -125,7 +125,7 @@
 # else:
 #     print('nie ma')
 
-#3. Niech użytkownik poda jakąś liczbę.
+# 3. Niech użytkownik poda jakąś liczbę.
 # Jeśli poda dodatnią to chcemy wyświetlić tę wartość z informacją
 # "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
 # jeśli ujemna to wyświetlamy "wartość ujemna".
@@ -142,9 +142,8 @@
 #     print(f'{number}  jest ujemne')
 
 
-#4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
+# 4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
-
 
 
 # height=float(input('podaj wzrost w metrach:\n'))
@@ -168,7 +167,7 @@
 # else:
 #     print('III stopień przypakowania')
 
-#przerwa do 11:36
+# przerwa do 11:36
 #
 # for x in range(10):
 #     print('siema!')
@@ -190,7 +189,7 @@
 #     print(x*1000)
 # print(f'x na koniec wynosi {x}')
 
-#5. Wyświetl 20 kolejnych potęg liczby 2
+# 5. Wyświetl 20 kolejnych potęg liczby 2
 #
 # for p in range(1,21):
 #     print(pow(2,p))
@@ -203,7 +202,7 @@
 #     else:
 #         print(f'{x} jest ujemne')
 
-#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+# 6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
 #  parzysta czy nieparzysta
 #
 # for x in range(1,101,2):
@@ -217,13 +216,13 @@
 #     else:
 #         print(f'{x} jest nieparzysta')
 
-#7.  Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
-  # - kwotę lokaty
-  # - oprocentowanie w skali roku
-  # - ilość miesięcy na jaką zakladamy lokatę
-  # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
-  # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
-  # Kapitalizacja comiesięczna
+# 7.  Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
+# - kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakladamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+# oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
+# Kapitalizacja comiesięczna
 #
 # account=100000
 # interest=0.08
@@ -281,7 +280,112 @@
 # from my_lib import funkcja_w_innnym_module
 # funkcja_w_innnym_module()
 
-#import requests
+# import requests
 
-#8. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
-#od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
+# 8. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+# od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
+
+# import random
+# limit=int(input('podaj maksymalną wartość:\n'))
+# suma=0
+# while suma<limit:
+#     print(suma)
+#     suma += random.randint(1, 10)
+#
+# while True:
+#     pass
+#
+# def funkcja():
+#     pass
+#
+# funkcja()
+
+# import psycopg2
+
+# przerwa obiadowa do 13:02
+
+# text="siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+# print(text.replace('a','X'))
+# print(text.lower().replace('a','X'))
+# print(text)
+# text=text.upper()
+# print(text)
+
+# text="siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# print(len(text))
+# list=[1,2,3,4,5]
+# print(len(list))
+# print(text.count('a'))
+# print(text.lower().count('a'))
+
+# text="\n                siała BABA mak i dostała 10 lat bo nie płaciła VAT\n"
+# print(text)
+# print(text.strip())
+# print(text.replace(' ',''))
+#
+# text="siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# # for l in text:
+# #     print(l)
+# if 'BABA' in text:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+
+# text="siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# if 'baba' in text:
+#     print('jest')
+# else:
+#     print('nie ma')
+#
+# text="siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# if 'bAba'.lower() in text.lower():
+#     print('jest')
+# else:
+#     print('nie ma')
+
+# print('baba'*10)
+# value=input('podaj wartość\n')
+# print(value*10)
+#
+# value=float(input('podaj wartość\n'))
+# print(value*10)
+#
+# if "Java">"Python":
+#     print('chyba Cię gnie')
+# else:
+#     print('no rejczel')
+
+# lista=['1','2','11','22']
+# lista.sort()
+# print(lista)
+#
+# lista=[1,2,11,22]
+# lista.sort()
+# print(lista)
+#
+# text="siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# print(text[0:11])
+# print(text[0:11:2])
+#
+# text = "siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# print(text.index("BABA"))
+# #CTRL+ALT+L - formatowanie
+#
+# text = "siała BABA mak i dostała 10 lat bo nie płaciła VAT"
+# print(text.replace(' ','    '))
+
+# if "Java">"A":
+#     print('chyba Cię gnie')
+# else:
+#     print('no rejczel')
+
+#
+# print(f"du{chr(120)}pa")
+# print(ord("x"))
+
+#9. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego
+# znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
