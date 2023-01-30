@@ -588,3 +588,68 @@
 
 #15. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
+
+#pandas
+#
+# l=[]
+# for x in range(1,10):
+#     podlista=[x,pow(2,x)]
+#     l.append(podlista)
+# print(l)
+
+#
+# l=[]
+# for x in range(1,10): l.append([x,pow(2,x)])
+# print(l)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+
+
+# lista=[x*100 for x in range(1,11)]
+# print(lista)
+#
+# lista=[]
+# for x in range(1,101):
+#     if x%2==0:
+#         lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,101) if x%2==0]
+# print(lista)
+#
+
+#
+# print([x for x in range(1,101) if x%2==0])
+
+
+# import random
+# lista=[]
+# for _ in range(10):
+#     lista.append(random.randint(1,10))
+# print(lista)
+
+
+# import random
+# lista=[random.randint(1,10) for x in range(10)]
+# print(lista)
+# odfiltrowana=[e for e in lista if e%2==0]
+# print(odfiltrowana)
+# import random
+# def fun(x):
+#     if x%2==0:
+#         return x*2
+#     else:
+#         return x*4
+#
+# lista=[random.randint(1,10) for x in range(10) ]
+# przetworzone=[fun(e) for e in lista]
+# print(przetworzone)
+
+
+#16. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+s
