@@ -652,4 +652,33 @@
 
 
 #16. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
-s
+#
+# l=[pow(2,e) for e in range(1,11)]
+# print(l)
+#print([pow(2,e) for e in range(1,11)])
+# import matplotlib.pyplot as plt
+# data=[pow(2,e) for e in range(1,11)]
+# plt.plot(data)
+# plt.show()
+#
+# lista=[1,2,3,4]
+# lista2=lista.copy()
+# lista.clear()
+# print(lista)
+# print(lista2)
+
+#matplotlib, seaborn
+
+# import matplotlib.pyplot as plt
+# data=[pow(2,e) for e in range(1,11)]
+# plt.plot(data,label="dane")
+# plt.legend()
+# plt.grid()
+# plt.xlabel('oś x')
+# plt.ylabel('oś y')
+# plt.show()
+
+#17. Korzystając z list składanych wygeneruj listę 10 elementow której
+# każdy element również będzie listą.
+# Pierwszy element tej podlisty to numer potegi,
+# a drugi to wartosc tej potegi dla liczby 2
