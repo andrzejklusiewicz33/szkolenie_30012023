@@ -699,3 +699,12 @@
 #18. Napisz program który z pliku dane.csv wyświetli powiekszone
 # imiona i nazwiska oraz wzrost i masę
 #list[2].lower()
+
+# for line in open('dane.csv',encoding='utf-8'):
+#     list=line.strip().split(';')
+#     print(list[1].upper(),list[2].upper(),list[3],list[4])
+
+#19. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv w taki sposób
+# by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam
+# powinien byc listą. Następnie przeiteruj po wyniku i wyświetl wszystkie elementy
+# listy   linia po linii.
