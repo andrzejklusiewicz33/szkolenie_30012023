@@ -146,7 +146,48 @@
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
 
 
-height=float(input('podaj wzrost w metrach:\n'))
-weight=float(input('podaj masę w kilogramach\n'))
-bmi=round(weight/pow(height,2),2)
-print(f'Twoje BMI={bmi}')
+
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(f'Twoje BMI={bmi}')
+# if bmi<16:
+#     print('wygłodzenie')
+# elif bmi<17:
+#     print('wychudzenie')
+# elif bmi<18.5:
+#     print('niedowaga')
+# elif bmi<25:
+#     print('masa ok')
+# elif bmi<30:
+#     print('nadwaga')
+# elif bmi<35:
+#     print('I stopień przypakowania')
+# elif bmi<40:
+#     print('II stopień przypakowania')
+# else:
+#     print('III stopień przypakowania')
+
+#przerwa do 11:36
+#
+# for x in range(10):
+#     print('siema!')
+
+#
+# lista=[1,2,3,4]
+# for e in lista:
+#     print(e)
+
+
+# for x in range(10):
+#     print(f'siema po raz {x}!')
+
+
+# for x in range(1,11):
+#     print(f'siema po raz {x}!')
+#
+# for x in range(1,11):
+#     print(x*1000)
+# print(f'x na koniec wynosi {x}')
+
+#5. Wyświetl 20 kolejnych potęg liczby 2
