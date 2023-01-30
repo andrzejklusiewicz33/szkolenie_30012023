@@ -708,3 +708,17 @@
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam
 # powinien byc listą. Następnie przeiteruj po wyniku i wyświetl wszystkie elementy
 # listy   linia po linii.
+#
+# result=[]
+# for line in open('dane.csv',encoding='utf-8'):
+#     list=line.strip().split(';')
+#     result.append(list)
+# #
+# result=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# for r in result:
+#     print(r)
+
+
+
+for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
+    print(r)
