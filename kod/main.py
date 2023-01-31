@@ -1387,3 +1387,44 @@
 #import this
 
 #33. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
+
+# for x in range(-10,11):
+#     print(x,1/x)
+
+#GIL
+
+# print(1/0)
+# print('coś jeszcze')
+
+# try:
+#     print(1/0)
+#     print('druga czynność')
+# except:
+#     print('Jakaś muka...')
+# print('coś jeszcze')
+#
+# try:
+#     print(1/0)
+#     print('druga czynność')
+# except Exception as e :
+#     print('Jakaś muka...',e,type(e))
+# print('coś jeszcze')
+
+
+# try:
+#     filename="nieistniejacyplik.txt"
+#     file=open(filename)
+#     print(1/0)
+#     print('druga czynność')
+# except FileNotFoundError:
+#     print('nie ma takiego pliku: ',filename)
+# except ZeroDivisionError:
+#     print('nie dziel przez zero!')
+# except Exception as e:
+#     print('jakiś inny wyjątek...',e,type(e))
+# print('coś jeszcze')
+
+#34. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10
+# w taki sposob by w przypadku wyjatku nie przerywac dzialania petli
+# a po prostu wyswietlic na konsoli informację o błędzie i przejsc
+# do dalszego przetwarzania
