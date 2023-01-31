@@ -718,7 +718,13 @@
 # for r in result:
 #     print(r)
 
-
-
+#
+# for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
+#     print(r)
+#
 for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
-    print(r)
+    print(r[3],type(r[3]),float(r[3])/2)
+
+#20. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+#   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+
