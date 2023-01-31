@@ -1104,3 +1104,32 @@
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
 
 #unhashable type list
+#
+# data=set([tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8') if ....])
+# print(data)
+# for d in data:
+#     print(d)
+
+
+#29. Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv znalazly się
+# dane z pliku dane.csv wzbogacone o obliczone BMI, bez duplikatów i rozwiązując problem
+# podania przecinka w miejsce kropki we wzroście i masie oraz problem z pustymi wierszami.
+
+# plik=open('plik.txt',encoding='utf-8',mode='w')
+# for x in range(1,11):
+#     plik.write(f"linia numer {x}\n")
+# plik.close()
+#
+# with open('plik.txt',encoding='utf-8',mode='w') as plik:
+#     for x in range(1,11):
+#         plik.write(f"linia numer {x}\n")
+# print('koniec')
+#
+# lista=['1','Andrzej','Klusiewicz','1.76','72']
+# print(f"{lista[0]};{lista[1]};{lista[2]}")
+# print(";".join(lista))
+
+#
+# lista=['1','Andrzej','Klusiewicz','1.76','72',str(19.5)]
+# print(f"{lista[0]};{lista[1]};{lista[2]}")
+# print(";".join(lista))
