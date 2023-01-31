@@ -1221,5 +1221,37 @@
 
 #31. Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone z
 # nazwiskiem rozdzielone spacja (powiększone obie wartości),
-# a pozostałe dane znalazły się w wartości
+# a cały wiersz znajdzie się w wartości
 #   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
+
+# sl=dict()
+# for f in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]: sl[f[1].upper()+" "+f[2].upper()]=f
+# for k in sl: print(k,sl[k])
+#
+# print(sl['BABKA KIEPSKA'])
+
+#32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
+#    Wynik powinien byc posortowany malejąco wg ilosci wystapien
+#    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy.
+#       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#    c) Przepakuj dane ze słownika do listy i posortuj.
+# #
+# Tadeusz
+# Tadeusz.
+# Tadeusz,
+# Tadeusz!
+#
+# Wiosna
+# wiosna
+# import re
+# print(set(re.findall("\W",open('tadzio.txt',encoding='utf-8').read())))
+
+unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+
+# slowa=['cos','cos innego','cos']
+# for s in slowa:
+#     print(s,slowa.count(s))
