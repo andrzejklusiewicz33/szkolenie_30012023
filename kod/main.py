@@ -790,12 +790,115 @@
 #50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
 # Całą listę zaprezentuj na wykresie w postaci liniowej
 
-import matplotlib.pyplot as plt
-lista=[1,2,3,4]
-lista2=[2,4,6,8]
-plt.plot(lista)
-plt.plot(lista2)
-plt.show()
+# import matplotlib.pyplot as plt
+# lista=[1,2,3,4]
+# lista2=[2,4,6,8]
+# plt.plot(lista)
+# plt.plot(lista2)
+# plt.show()
 
 #anaconda, jupiter
 #import tensorflow
+
+# def funkcja(x,y):
+#     print(x,y)
+#
+# funkcja('koza','nietoperz')
+
+# def funkcja2(*args):
+#     for a in args:
+#         print(a)
+#
+# funkcja2('koza','nietoperz','toperz','banan')
+
+# def funkcja(**params):
+#     for k in params:
+#         print(k,params[k])
+#
+# funkcja(param1='cośtam',imie='Andrzej',waluta='PLN')
+
+#import time
+
+# def mierzczas(fun):
+#     def wewnetrzna(*args,**kwargs):
+#         start=time.time()
+#         fun(*args,**kwargs)
+#         koniec=time.time()
+#         print(f'funkcja trwała {koniec-start}s')
+#     return wewnetrzna
+# @mierzczas
+# def funkcja():
+#     time.sleep(3)
+#     print('siema')
+
+#funkcja()
+
+# f=mierzczas(funkcja)
+# f()
+#
+# import matplotlib.pyplot as plt
+# wartosci=[2,4,8,16,32,64]
+# osx=['01-2023','02-2023','03-2023','04-2023','05-2023','06-2023']
+# plt.plot(osx,wartosci)
+# plt.show()
+
+#21. Umieść w liście kwadraty losowych wartości z zakresu 1-100. Chcemy mieć w liście
+#50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
+# Całą listę zaprezentuj na wykresie w postaci liniowej
+
+# import random
+# import matplotlib.pyplot as plt
+# kwadraty=[pow(random.randint(1,100),2) for _ in range(50)]
+# print(kwadraty)
+# print(max(kwadraty)-min(kwadraty))
+# plt.plot(kwadraty)
+# plt.show()
+#
+# lista=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B'],
+#     [4,'D']
+# ]
+# lista.sort()
+# print(lista)
+#
+# from operator import itemgetter
+# lista=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B'],
+#     [4,'D']
+# ]
+# lista.sort(key=itemgetter(1))
+# print(lista)
+
+#
+# lista=[
+#     [2,'A'],
+#     [1,'C'],
+#     [3,'B'],
+#     [4,'D']
+# ]
+# lista.sort(key=lambda x:x[1])
+# print(lista)
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p1=Person('Andrzej','Klusiewicz')
+# p2=Person('Monika','Bożko')
+#
+# lista=[p1,p2]
+# lista.sort(key=lambda x:x.last_name)#,reverse=True)
+# for e in lista:
+#     print(e)
+
+#22. Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# Dane posortuj po masie malejąco i wyswietl linia po linii na konsoli.
