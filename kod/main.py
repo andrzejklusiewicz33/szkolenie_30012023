@@ -1312,6 +1312,27 @@
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
 
+# import time
+# start=time.time()
+# file_name='tadzio.txt'
+# all=open(file_name,encoding='utf-8').read().lower()
+# unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+# for u in unwanted:
+#     all=all.replace(u,'')
+# words=all.split()
+# sl=dict()
+# for w in words:
+#     if w in sl:
+#         sl[w]+=1
+#     else:
+#         sl[w]=1
+# for k in sl:
+#     print(k,sl[k])
+# end=time.time()
+# print(f'proces trwał {end-start}s')
+
+
+#    c) Przepakuj dane ze słownika do listy i posortuj a nastepnie wyswietl.
 import time
 start=time.time()
 file_name='tadzio.txt'
@@ -1320,5 +1341,14 @@ unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', '
 for u in unwanted:
     all=all.replace(u,'')
 words=all.split()
+sl=dict()
+for w in words:
+    if w in sl:
+        sl[w]+=1
+    else:
+        sl[w]=1
+for k in sl:
+    print(k,sl[k])
 end=time.time()
 print(f'proces trwał {end-start}s')
+
