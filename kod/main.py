@@ -1133,3 +1133,77 @@
 # lista=['1','Andrzej','Klusiewicz','1.76','72',str(19.5)]
 # print(f"{lista[0]};{lista[1]};{lista[2]}")
 # print(";".join(lista))
+
+#29. Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv znalazly się
+# dane z pliku dane.csv wzbogacone o obliczone BMI, bez duplikatów i rozwiązując problem
+# podania przecinka w miejsce kropki we wzroście i masie oraz problem z pustymi wierszami.
+#
+# data=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in data:
+#     d.append(round(float(d[4])/pow(float(d[3]),2),2))
+#     d=tuple(d)
+#     print(d)
+
+#
+# data=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in data:
+#     d.append(round(float(d[4])/pow(float(d[3]),2),2))
+# tuples_data=[tuple(e) for e in data]
+# for td in tuples_data:
+#     print(td)
+#
+# data=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in data:
+#     d.append(round(float(d[4])/pow(float(d[3]),2),2))
+# tuples_data=[tuple(e) for e in data]
+# data=list(set(tuples_data))
+# for d in data:
+#     print(d)
+
+
+# data=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in data: d.append(str(round(float(d[4])/pow(float(d[3]),2),2)))
+# with open('output.csv',encoding='utf-8',mode='w') as file:
+#     for d in list(set([tuple(e) for e in data])):
+#         line=";".join(d)+"\n"
+#         file.write(line)
+#
+# data=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in data: d.append(str(round(float(d[4])/pow(float(d[3]),2),2)))
+# with open('output.csv',encoding='utf-8',mode='w') as file:
+#     for d in list(set([tuple(e) for e in data])): file.write(";".join(d)+"\n")
+
+#przerwa obiadowa do 13:25
+
+# sl=dict()
+# sl['key1']='value 1'
+# sl['key2']=1234
+# sl['list']=[1,2,3,4]
+
+# sl={
+#     "key1":'value1',
+#     "key2":1234
+# }
+
+# sl=dict()
+# sl['key1']='value 1'
+# sl['key2']=1234
+# sl['list']=[1,2,3,4]
+# print(sl['key1'])
+# print(sl['key2'])
+# print(sl['list'])
+# for k in sl.keys():
+#     print(k,sl[k])
+# for k in sl:
+#     print(k,sl[k])
+#
+# for v in sl.values():
+#     print(v)
+
+#30. Stwórz plik config.conf i umieść w nim poniższe dane
+# encoding=utf-8
+# timezone=-2
+# color=black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna
+# stanowila klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
