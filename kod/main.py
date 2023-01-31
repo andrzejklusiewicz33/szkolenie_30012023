@@ -1250,8 +1250,75 @@
 # import re
 # print(set(re.findall("\W",open('tadzio.txt',encoding='utf-8').read())))
 
-unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
-
+# unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+# text="siała !!!!???...,,"
+# for u in unwanted:
+#     text=text.replace(u,'')
+# print(text)
 # slowa=['cos','cos innego','cos']
+
 # for s in slowa:
 #     print(s,slowa.count(s))
+
+# import time
+# start=time.time()
+# file_name='tadzio.txt'
+# all=open(file_name,encoding='utf-8').read().lower()
+# unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+# for u in unwanted:
+#     all=all.replace(u,'')
+# words=all.split()
+# for w in words:
+#     print(w,words.count(w)) #fuuuuuuu
+# end=time.time()
+# print(f'proces trwał {end-start}s')
+
+# import time
+# start=time.time()
+# file_name='tadzio.txt'
+# all=open(file_name,encoding='utf-8').read().lower()
+# unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+# for u in unwanted:
+#     all=all.replace(u,'')
+# words=all.split()
+# for w in words:
+#     x=words.count(w) #fuuuuu
+# end=time.time()
+# print(f'proces trwał {end-start}s')
+
+#przerwa do 14:38
+
+# import time
+# start=time.time()
+# file_name='tadzio.txt'
+# all=open(file_name,encoding='utf-8').read().lower()
+# unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+# for u in unwanted:
+#     all=all.replace(u,'')
+# words=all.split()
+# end=time.time()
+# print(f'proces trwał {end-start}s')
+
+# sl=dict()
+# sl['key1']='value'
+# if 'key2' in sl:
+#     print('jest w słowniku')
+# else:
+#     print('nie ma w słowniku')
+
+
+
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+
+import time
+start=time.time()
+file_name='tadzio.txt'
+all=open(file_name,encoding='utf-8').read().lower()
+unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+for u in unwanted:
+    all=all.replace(u,'')
+words=all.split()
+end=time.time()
+print(f'proces trwał {end-start}s')
