@@ -968,8 +968,68 @@
 #         print(f'jest w {e}')
 #     else:
 #         print(f'nie ma w {e}')
+#
+# import os
+# phrase="oracle"
+# start_dir="e:\\"
+# for w in os.walk(start_dir):
+#     for c in w[1]:
+#         if phrase.lower() in c.lower():
+#             print(os.path.join(w[0],c))
+#     for f in w[2]:
+#         if phrase.lower() in f.lower():
+#             print(os.path.join(w[0],f))
+#
+
+# import os
+# phrase=input('podaj szukaną frazę:\n')
+# start_dir=input('podaj katalog startowy:\n')
+# for w in os.walk(start_dir):
+#     for c in w[1]:
+#         if phrase.lower() in c.lower():
+#             print(os.path.join(w[0],c))
+#     for f in w[2]:
+#         if phrase.lower() in f.lower():
+#             print(os.path.join(w[0],f))
+#
+# import re
+# text="siała baba mak i dostała 10 lat bo nie płaciła vat"
+# print(re.findall('\d{2}',text))
+#
+# import re
+# text="email do mnie to klusiewicz@jsystems.pl jakbyście potrzebowali pomocy po szkoleniu"
+# print(re.findall("\w{1,}@\w{1,}\.[a-zA-Z]{2,4}",text))
+
+#pandas
+
+#przerwa do 11:29
+#
+# lista=[1,2,3,4]
+# krotka=(1,2,3,4)
+# lista[2]='zmienione'
+# print(lista)
+# krotka[2]='zmienione'
+# print(krotka)
+
+# krotka=(6,7,12,1,2,3,4,1,1,1,1,1,1)
+# lista=list(krotka)
+# lista.sort()
+# krotka=tuple(lista)
+# print(krotka)
+# for e in krotka:
+#     print(e)
+# if 12 in krotka:
+#     print('jest')
+# else:
+#     print('nie ma')
+#
+# print(f'1 w krotce pojawia się {krotka.count(1)} razy')
+#
+# krotka=(6,7,12,1,2,3,4,1,1,1,1,1,1)
+# posortowane=tuple(sorted(krotka))
+# print(posortowane)
 
 
-import os
-for w in os.walk("e:\\"):
-    print(w)
+#25. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
+# Trzecią krotkę wypisz na konsoli posortowaną rosnąco.
