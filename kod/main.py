@@ -1333,22 +1333,57 @@
 
 
 #    c) Przepakuj dane ze słownika do listy i posortuj a nastepnie wyswietl.
-import time
-start=time.time()
-file_name='tadzio.txt'
-all=open(file_name,encoding='utf-8').read().lower()
-unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
-for u in unwanted:
-    all=all.replace(u,'')
-words=all.split()
-sl=dict()
-for w in words:
-    if w in sl:
-        sl[w]+=1
-    else:
-        sl[w]=1
-for k in sl:
-    print(k,sl[k])
-end=time.time()
-print(f'proces trwał {end-start}s')
+# import time
+# start=time.time()
+# file_name='tadzio.txt'
+# all=open(file_name,encoding='utf-8').read().lower()
+# unwanted=['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']
+# for u in unwanted:
+#     all=all.replace(u,'')
+# words=all.split()
+# sl=dict()
+# for w in words:
+#     if w in sl:
+#         sl[w]+=1
+#     else:
+#         sl[w]=1
+# result=[]
+# for k in sl:
+#     result.append([k,sl[k]])
+# result.sort(key=lambda r:r[1],reverse=True)
+# for e in result:
+#     print(e)
+# end=time.time()
+# print(f'proces trwał {end-start}s')
 
+
+# import time
+# start=time.time()
+# file_name='tadzio.txt'
+# all=open(file_name,encoding='utf-8').read().lower()
+# for u in ['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']:
+#     all=all.replace(u,'')
+# sl=dict()
+# for w in all.split():
+#     if w in sl:sl[w]+=1
+#     else:sl[w]=1
+# result=[[k,sl[k]] for k in sl]
+# result.sort(key=lambda r:r[1],reverse=True)
+# for e in result:  print(e)
+# end=time.time()
+# print(f'proces trwał {end-start}s')
+
+# all=open('tadzio.txt',encoding='utf-8').read().lower()
+# for u in ['.', ')', '«', ',', '(', '?', ':', '*', '-', '…', '!', '/', '»', ';', '—']:
+#     all=all.replace(u,'')
+# sl=dict()
+# for w in all.split():
+#     if w in sl:sl[w]+=1
+#     else:sl[w]=1
+# result=[[k,sl[k]] for k in sl]
+# result.sort(key=lambda r:r[1],reverse=True)
+# for e in result:  print(e)
+
+#import this
+
+#33. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
