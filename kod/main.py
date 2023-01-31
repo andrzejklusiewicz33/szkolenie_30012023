@@ -1045,3 +1045,37 @@
 # print(tuple(sorted(k3)))
 
 #26.Napisz kod ktory wyświetli w postaci listy krotek zawartość pliku dane.csv
+
+# data=[tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
+# print(data)
+# for d in data:
+#     print(d,type(d))
+
+# z1={1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3}
+# z1.add(4)
+# print(z1)
+#
+# z1={1,2,3,4}
+# z2={3,4,5,6}
+# print("część wspólna:",z1.intersection(z2))
+# print("suma zbiorów:",z1.union(z2))
+# print("z1-z2:",z1.difference(z2))
+# print("z2-z1:",z2.difference(z1))
+# krotka=(1,2,3)
+# print(sum(z1))
+# print(sum(krotka))
+
+# lista=[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3]
+# print(lista)
+# zestaw=set(lista)
+# print(zestaw)
+# lista=list(zestaw)
+# print(lista)
+#
+# result=list(set([1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3]))
+# print(result)
+# if len(result)==0:
+#     print('jest pusta')
+
+#27. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
