@@ -1444,3 +1444,55 @@
 # wzbogacony o informację o rodzaju błędu
 #4;Andrzej;1,89;90;IOERROR
 
+# for f in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#     try:
+#         bmi=round(float(f[4])/pow(float(f[3]),2),2)
+#         print(*f,bmi)
+#     except ValueError as ve:
+#         with open('errors.csv',encoding='utf-8',mode='a') as file:
+#             file.write(';'.join(f)+";ValueError;"+str(ve)+"\n")
+#     except Exception as e:
+#         with open('errors.csv',encoding='utf-8',mode='a') as file:
+#             file.write(';'.join(f)+";"+str(type(e))+';'+str(e)+"\n")
+#
+# def funkcja():
+#     print('hello!')
+#
+# funkcja()
+
+# def dodaj(a,b):
+#     print(a+b)
+#
+# dodaj(3,4)
+
+# def dodaj(a,b):
+#     wynik=a+b
+#     return wynik
+#     print('to nigdy nie nastąpi')
+#
+# c=dodaj(4,5)
+# print(c)
+# print(dodaj(3,4))
+
+#
+# def dodaj(a,b):
+#     return a+b
+#
+# print(dodaj(1,2))
+
+# def nazwa(x):
+#     if x==1:
+#         return 'jeden'
+#     elif x==2:
+#         return 'dwa'
+#     elif x==3:
+#         return 'trzy'
+#     else:
+#         return 'poza zakresem...'
+#
+# print(nazwa(1))
+# print(nazwa(4))
+
+#36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone
+# do 2 miejsc po przecinku BMI. W przypadku pojawienia się wyjątku,
+# wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.

@@ -1,0 +1,2 @@
+;<class 'IndexError'>;list index out of range
+3;Babka;Kiepska;1,54;45;ValueError;could not convert string to float: '1,54'
