@@ -1207,3 +1207,19 @@
 # Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna
 # stanowila klucze a druga przypisane do nich
 # wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
+
+
+# sl=dict()
+# for f in [e.strip().split('=') for e in open('config.conf',encoding='utf-8')]:
+#     sl[f[0]]=f[1]
+# # print(sl)
+# #
+# # for k in sl:
+# #     print(k,sl[k])
+#
+# print(sl['encoding'])
+
+#31. Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone z
+# nazwiskiem rozdzielone spacja (powiększone obie wartości),
+# a pozostałe dane znalazły się w wartości
+#   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
