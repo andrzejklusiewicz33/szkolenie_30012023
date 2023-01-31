@@ -925,3 +925,51 @@
 #dodanie bmi do kazdego wiersza
 #sortujemy listę po bmi
 #iterujemy po liście wyswietlajac jej elementy
+
+#
+# data=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for d in data:
+#     d.append(round(float(d[4])/pow(float(d[3]),2),2))
+# data.sort(key=lambda e:e[5], reverse=True)
+# for e in data:
+#     print(e)
+
+# import os
+# os.mkdir("d:\\mapet")
+#
+
+#
+# import os
+# for w in os.walk("e:\\"):
+#     print(w)
+#
+# import os
+# for w in os.walk("e:\\"):
+#     print(w[0])
+
+#24. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną frazę
+# - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+
+# tekst="siała baba mak"
+# if "bab" in tekst:
+#     print('jest w tekście')
+# else:
+#     print('nie ma w tekście')
+#
+# lista=['siała','baba','mak']
+# if "bab" in lista:
+#     print('jest w liście')
+# else:
+#     print('nie ma w liście')
+#
+# for e in lista:
+#     if "BAB".lower() in e.lower():
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+
+
+import os
+for w in os.walk("e:\\"):
+    print(w)
