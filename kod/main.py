@@ -902,3 +902,26 @@
 
 #22. Wczytaj do listy kolejne wiersze z pliku dane.csv.
 # Dane posortuj po masie malejąco i wyswietl linia po linii na konsoli.
+#
+# data=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# data.sort(key=lambda x:float(x[4]),reverse=True)
+# for d in data:
+#     print(d)
+
+# lista=['1','22','2','11']
+# lista.sort()
+# print(lista)
+
+# lista=[1,22,2,11]
+# lista.sort()
+# print(lista)
+
+#przerwa do 10:25
+
+#23. Wyświetl na konsoli linia po linii dane z pliku dane.csv
+# ale posortowane malejąco wg. bmi
+
+#przypisanie danych do listy
+#dodanie bmi do kazdego wiersza
+#sortujemy listę po bmi
+#iterujemy po liście wyswietlajac jej elementy
