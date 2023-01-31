@@ -721,10 +721,81 @@
 #
 # for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
 #     print(r)
-#
-for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
-    print(r[3],type(r[3]),float(r[3])/2)
+# #
+# for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
+#     print(r[3],type(r[3]),float(r[3])/2)
 
 #20. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+#
+# for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
+#     bmi=round(float(r[4])/pow(float(r[3]),2),2)
+#     print(*r,bmi)
 
+#
+# for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
+#     r.append(round(float(r[4])/pow(float(r[3]),2),2))
+#     print(*r)
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# print(lista)
+# print(max(lista),min(lista),sum(lista),sum(lista)/len(lista))
+#
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# lista.sort()
+# print(lista)
+
+#
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# lista.sort()
+# lista.reverse()
+# print(lista)
+
+#
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# lista.sort(reverse=True)
+# print(lista)
+
+
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# posortowana=sorted(lista)
+# print(lista)
+# print(posortowana)
+# krotka=(2,3,1,4)
+# krotka=sorted(krotka)
+#
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# posortowana=sorted(lista,reverse=True)
+# print(lista)
+# print(posortowana)
+
+#
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# posortowana=sorted(lista)
+# posortowana.reverse()
+# print(lista)
+# print(posortowana)
+# import random
+# lista=[random.randint(1,1000) for _ in range(100)]
+# #lista.sort()
+# kopia=sorted(lista)
+
+#21. Umieść w liście kwadraty losowych wartości z zakresu 1-100. Chcemy mieć w liście
+#50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
+# Całą listę zaprezentuj na wykresie w postaci liniowej
+
+import matplotlib.pyplot as plt
+lista=[1,2,3,4]
+lista2=[2,4,6,8]
+plt.plot(lista)
+plt.plot(lista2)
+plt.show()
+
+#anaconda, jupiter
+#import tensorflow
