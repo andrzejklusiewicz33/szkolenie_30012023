@@ -1830,14 +1830,75 @@
 # response=requests.post("https://jsystems.pl/static/blog/python/dane.json",data=dane,headers={"Content-Type":"application/json"})
 # print(response.status_code)
 
-import requests
-response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/',headers={"Content-Type":"application/json"})
-#print(response.json())
-for e in response.json()[0]['rates']:
-    print(e)
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/',headers={"Content-Type":"application/json"})
+# #print(response.json())
+# for e in response.json()[0]['rates']:
+#     print(e)
 
 #przerwa do 11:46
 
 #42. Z API RESTowego NBPu pobierz informacje o aktualnych kursach Dolara, Franka szwajcarskiego i Euro.
 #Wyświetl tylko symbol waluty i wartość
 
+#
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/',headers={"Content-Type":"application/json"})
+# for e in response.json()[0]['rates']:
+#     if e['code'] in ['USD','EUR','CHF']:
+#         print(e)
+
+#
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/',headers={"Content-Type":"application/json"})
+# for e in response.json()[0]['rates']:
+#     if e['code'] in ['USD','EUR','CHF']:
+#         print(e['code'],e['mid'])
+
+#
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/',headers={"Content-Type":"application/json"})
+# for f in [e for e in response.json()[0]['rates']  if e['code'] in ['USD','EUR','CHF']]:
+#         print(f['code'],f['mid'])
+
+
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/')#,headers={"Content-Type":"application/json"})
+# if response.status_code==200:
+#     for f in [e for e in response.json()[0]['rates']  if e['code'] in ['USD','EUR','CHF']]:print(f['code'],f['mid'])
+# else:
+#     print(f'Bład pobierania danych. status_code={response.status_code}')
+
+#
+# import requests
+# response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/')#,headers={"Content-Type":"application/json"})
+# print(response.json())
+#
+# import requests
+# from bs4 import BeautifulSoup
+# import re
+# code=requests.get('https://www.bankier.pl/mieszkaniowe/stopy-procentowe/wibor')
+# code.encoding='utf-8'
+# bs=BeautifulSoup(code.text,"html.parser")
+# table=bs.find(class_="boxContent boxTable")
+# tbody=bs.find('tbody')
+# listtd=tbody.find_all(class_="textBold change down")
+# for ltd in listtd:
+#     print(ltd)
+#print(listtd)
+# data=re.findall("\d{1,}\,\d{1,2}",listtd.string)
+# print(data)
+
+#SQL Injection
+
+# import os
+# print(os.getlogin())
+
+#przerwa obiadowa do 13:23
+
+#psycopg2 - postgresql
+#cx_oracle - oracle
+#pyodbc - sql server
+
+import psycopg2
+connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
