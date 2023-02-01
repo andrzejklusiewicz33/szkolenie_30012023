@@ -1642,8 +1642,68 @@
  # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
  # poprzedniego i przekaz do nowo powstalej funkcji.
 
-def get_csv(file_name,enc='utf-8',div=';'):
-    print(f'file_name={file_name}')
-    print(f'encoding={enc}')
-    print(f'divisor={div}')
-    return [line.strip().split(div) for line in open(file_name,encoding=enc)]
+# def get_csv(file_name,enc='utf-8',div=';'):
+#     print(f'file_name={file_name}')
+#     print(f'encoding={enc}')
+#     print(f'divisor={div}')
+#     return [line.strip().split(div) for line in open(file_name,encoding=enc)]
+#
+# def print_csv(data):
+#     for d in data:
+#         print(d)
+#
+# result=get_csv('dane.csv')
+# print_csv(result)
+#
+# print_csv(get_csv('dane.csv'))
+# import time
+# import functools
+#
+# @functools.lru_cache()
+# def zamulacz(x):
+#     time.sleep(1)
+#     return f'dane dla wejściowego: {x}'
+#
+# start=time.time()
+# for _ in range(10):
+#     for i in range(1,4):
+#         print(zamulacz(i))
+# koniec=time.time()
+# print(f'czas trwania {koniec-start}s')
+
+# import time
+# import functools
+#
+# @functools.lru_cache(maxsize=10)
+# def zamulacz(x):
+#     time.sleep(1)
+#     return f'dane dla wejściowego: {x}'
+#
+# start=time.time()
+# for x in range(1,11):
+#     if x%5==0:
+#         zamulacz.cache_clear()
+#     for i in range(1,4):
+#         print(zamulacz(i))
+# koniec=time.time()
+# print(f'czas trwania {koniec-start}s')
+#
+# import time
+# import functools
+#
+# @functools.lru_cache(maxsize=10)
+# def zamulacz(x):
+#     time.sleep(1)
+#     return f'dane dla wejściowego: {x}'
+#
+# start=time.time()
+# for x in range(1,11):
+#     print(zamulacz.cache_info())
+#     for i in range(1,4):
+#         print(zamulacz(i))
+# koniec=time.time()
+# print(f'czas trwania {koniec-start}s')
+
+#39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty,
+# oprocentowanie w skali roku, ilosc miesięcy. Funkcja ma zwrócić zarobek
+# na lokacie o podanych parametrach
