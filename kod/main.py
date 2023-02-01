@@ -1773,7 +1773,71 @@
 # import csv_tools.tools as ct
 # ct.print_csv(ct.get_csv('dane.csv'))
 
-import this
+# import this
 
 #41. Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
+#
+#rom body.tools import *
+# print(bmi(80,1.76))
+#
+#help(bmi)
+#
+# import random
+#
+# help(random.randint)
+
+# import requests
+# response=requests.get("https://jsystems.pl/static/blog/python/dane.json")
+# print(f'status code={response.status_code}')
+# if response.status_code==200:
+#     print('ok')
+#     print(response.text)
+
+# import requests
+# response=requests.get("https://jsystems.pl/")
+# print(f'status code={response.status_code}')
+# if response.status_code==200:
+#     print('ok')
+#     print(response.text)
+
+#BeautifulSoup, Scrapy
+
+
+# import requests
+# response=requests.get("https://jsystems.pl/static/blog/python/dane.json")
+# print(f'status code={response.status_code}')
+# if response.status_code==200:
+#     print('ok')
+#     print(response.json())
+#     data=response.json()
+#     print(data['nazwisko'])
+#     adres=data['adres']
+#     print(adres['miasto'])
+#     print(data['adres']['miasto'])
+#     print(response.json()['adres']['miasto'])
+#     for e in data['jezyki']:
+#         print(e)
+
+
+#SWAGGER
+#
+# import requests
+# dane={
+#     "key1": "value1",
+#     "key2": 1234
+# }
+# response=requests.post("https://jsystems.pl/static/blog/python/dane.json",data=dane,headers={"Content-Type":"application/json"})
+# print(response.status_code)
+
+import requests
+response=requests.get('https://api.nbp.pl/api/exchangerates/tables/A/',headers={"Content-Type":"application/json"})
+#print(response.json())
+for e in response.json()[0]['rates']:
+    print(e)
+
+#przerwa do 11:46
+
+#42. Z API RESTowego NBPu pobierz informacje o aktualnych kursach Dolara, Franka szwajcarskiego i Euro.
+#Wyświetl tylko symbol waluty i wartość
+
