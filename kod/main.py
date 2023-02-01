@@ -1973,3 +1973,56 @@
 # connection.commit()
 
 #44. Załaduj do tabelki players wszystkie dane z pliku dane.csv
+
+# import csv_tools.tools as ct
+# data=ct.get_csv('dane.csv')
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# cursor=connection.cursor()
+# for d in data:
+#     sql=f"insert into players(player_id,first_name,last_name,height,weight) values ({d[0]},'{d[1]}','{d[2]}',{d[3]},{d[4]})"
+#     print(sql)
+#     cursor.execute(sql)
+# connection.commit()
+
+
+#przerwa do 15:00
+
+#klasa
+#obiekt
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def hello(self):
+#         print('hello!')
+#
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+# #p1.hello()
+# print(p1.first_name,p1.last_name)
+# p2=Person()
+# p2.first_name='Jan'
+# p2.last_name='Nowak'
+# print(p2.first_name,p2.last_name)
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def hello(self):
+#         print(f"hello I'm {self.first_name} {self.last_name}!")
+#
+#
+#
+# p=Person()
+# p.first_name='Andrzej'
+# p.last_name='Klusiewicz'
+# p.hello()
+
+#45. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
+# Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli
+# Stwórz dwa obiekty tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
