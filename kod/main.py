@@ -1916,3 +1916,58 @@
 
 #43. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 #   wszystkie wiersze z tabelki employees w fomacie csv.
+
+
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# cursor=connection.cursor()
+# cursor.execute("select * from employees")
+# with open('employees.csv',encoding='utf-8',mode='w') as file:
+#     for w in cursor:
+#         line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
+#         file.write(line)
+
+
+# def export_employees(file_name):
+#     import psycopg2
+#     connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+#     cursor=connection.cursor()
+#     cursor.execute("select * from employees")
+#     with open(file_name,encoding='utf-8',mode='w') as file:
+#         for w in cursor:
+#             line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
+#             file.write(line)
+#
+# export_employees('employees.csv')
+
+
+
+# def export_employees(file_name):
+#     import psycopg2
+#     connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+#     cursor=connection.cursor()
+#     cursor.execute("select * from employees")
+#     with open(file_name,encoding='utf-8',mode='w') as file:
+#         for w in cursor:
+#             file.write(';'.join([str(e) for e in w])+'\n')
+#
+# export_employees('employees.csv')
+
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# cursor=connection.cursor()
+# name="Przyczłap do bulbulatora"
+# price=200
+# description="Takie coś z takim czymś bez takiego czegoś (taki teges)"
+# stock=10
+# sql=f"insert into products(product_name,price,description,stock) values ('{name}',{price},'{description}',{stock})"
+# cursor.execute(sql)
+# connection.commit()
+#
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# cursor=connection.cursor()
+# id=6
+# sql=f"delete from products where product_id={id}"
+# cursor.execute(sql)
+# connection.commit()

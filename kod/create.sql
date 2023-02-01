@@ -24,3 +24,13 @@ create table products(
 insert into products(product_name,price,description,stock) values ('Bulbulator',100,'Urządzenie które robi bul bul',32);
 insert into products(product_name,price,description,stock) values ('Półoś do Jelcza',1500,'Takie coś z takim czymś bez takiego czegoś',2);
 insert into products(product_name,price,description,stock) values ('Wihajster',300,'Z dzyndzlem albo bez',0);
+
+
+
+create table players (
+	player_id integer primary key,
+	first_name text not null,
+	last_name text not null,
+	height numeric not null,
+	weight numeric not null
+);
