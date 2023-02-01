@@ -2026,3 +2026,62 @@
 #45. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
 # Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli
 # Stwórz dwa obiekty tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
+
+#PEP8
+
+#firstName
+#first_name
+
+#reportlab
+#
+# import domain
+# p=domain.Person()
+#
+# from domain import *
+# p=Person()
+
+#def get_all_faktury() #fuuuu
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# s1=Samochod()
+# s1.marka='Renault'
+# s1.model='Kadjar'
+# s1.rejestracja='WY 12345'
+#
+# #s1.ustaw_wartosci('Renault','Kadjar','WY 12345')
+# s1.wyswietl()
+#
+# s2=Samochod()
+# s2.marka='Opel'
+# s2.model='Mokka'
+# s2.rejestracja='WU 12345'
+# s2.wyswietl()
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def hello(self):
+#         print(f"hello I'm {self.first_name} {self.last_name}!")
+#     def set_values(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#
+# p=Person()
+# p.set_values('Andrzej','Klusiewicz')
+# p.hello()
+
+#46. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
+# Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
+#Stwórz obiekt, uzupelnij go danymi i wyswietl jego zawartosc
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
