@@ -1459,7 +1459,7 @@
 #     print('hello!')
 #
 # funkcja()
-
+#
 # def dodaj(a,b):
 #     print(a+b)
 #
@@ -1469,7 +1469,7 @@
 #     wynik=a+b
 #     return wynik
 #     print('to nigdy nie nastąpi')
-#
+# #
 # c=dodaj(4,5)
 # print(c)
 # print(dodaj(3,4))
@@ -1489,10 +1489,17 @@
 #         return 'trzy'
 #     else:
 #         return 'poza zakresem...'
-#
+# #
 # print(nazwa(1))
 # print(nazwa(4))
 
 #36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone
 # do 2 miejsc po przecinku BMI. W przypadku pojawienia się wyjątku,
 # wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
+
+#return None
+# def funkcja():
+#     pass
+#
+# print(funkcja())
+
