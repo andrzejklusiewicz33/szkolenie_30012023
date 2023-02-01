@@ -1900,5 +1900,19 @@
 #cx_oracle - oracle
 #pyodbc - sql server
 
-import psycopg2
-connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# cursor=connection.cursor()
+# cursor.execute("select * from products")
+# for row in cursor:
+#     print(row)
+#
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",port=5432, database="postgres",user="andrzej", password="oracle")
+# cursor=connection.cursor()
+# cursor.execute("select * from products")
+# for row in cursor:
+#     print(row[1])
+
+#43. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+#   wszystkie wiersze z tabelki employees w fomacie csv.
