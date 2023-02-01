@@ -1503,3 +1503,119 @@
 #
 # print(funkcja())
 
+# def bmi(height,weight):
+#     return round(weight/pow(height,2),2)
+#
+# result=bmi(1.76,80)
+# print(result)
+# print(bmi(1.76,80))
+
+#
+# def bmi(height,weight):
+#     try:
+#         return round(weight/pow(height,2),2)
+#     except Exception as e:
+#         print(f'wyjątek {str(type(e))}: {str(e)}')
+#         return -1
+#
+# result=bmi(0,80)
+# print(result)
+
+
+
+# def bmi(height,weight):
+#     try:
+#         return round(weight/pow(height,2),2)
+#     except Exception as e:
+#         print(f'wyjątek {str(type(e))}: {str(e)}')
+#         return -1
+#
+# result=bmi('koza',80)
+# print(result)
+
+# def bmi(weight,height):
+#     try:
+#         return round(weight/pow(height,2),2)
+#     except ZeroDivisionError:
+#         print(f'Podałeś zerowy wzrost')
+#         return -1
+#     except TypeError:
+#         print('Podałeś wartość która nie jest liczbą')
+#         return -2
+#     except Exception as e:
+#         print(f'wyjątek {str(type(e))}: {str(e)}')
+#         return -3
+#
+# result=bmi(80,1.76)
+# print(result)
+#
+# for line in open('dane.csv',encoding='utf-8'):
+#     pass
+
+# def witacz(imie='nie podano',nazwisko='nie podano'):
+#     print(f'Siema {imie} {nazwisko}!')
+#
+# witacz('Andrzej','Klusiewicz')
+# witacz('Andrzej')
+# witacz()
+# witacz(nazwisko="Klusiewicz",imie="Andrzej")
+
+# def witacz(imie,nazwisko=''):
+#     print(f'Siema {imie} {nazwisko}!')
+#
+# witacz('Andrzej')
+# witacz('Andrzej','Klusiewicz')
+
+# def witacz(nazwisko='',imie): #fuuuuu nie działa
+#     print(f'Siema {imie} {nazwisko}!')
+#
+# witacz('Andrzej')
+# witacz('Andrzej','Klusiewicz')
+#
+# x=100
+# def witacz(a):
+#     a=200
+#
+# print(x)
+
+#
+# x=100
+# def witacz(a):
+#     a=200
+#
+# print(x)
+#
+
+#
+# x=100
+# def witacz(x):
+#     x=200
+#
+# witacz(x)
+# print(x)
+#
+#
+# x=[1,2,3]
+# def witacz(list):
+#     list=[]
+#
+# witacz(x)
+# print(x)
+
+# def fun(*args):
+#     print(args[0]+args[1])
+#
+# #fun(1,2,3,4)
+# fun(1)
+
+# suma=0
+# for x in range(1,11):
+#     suma+=x
+#     print('whatever')
+
+#37.  Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+  # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
+  # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8.
+  #Kolumny mają być rozdzielane znakiem podanym jako trzeci argument funkcji, a jeśli nie zostanie podany to ma przyjąć średnik
+
+
