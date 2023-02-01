@@ -1769,9 +1769,11 @@
 
 #40. Przenieś poniższe funkcje do modułu tools mieszczącego się w pakiecie csv_tools
 #Zaimportuj moduł i odbierz dane z jednej funkcji i przekaż do drugiej funkcji
+#
+# import csv_tools.tools as ct
+# ct.print_csv(ct.get_csv('dane.csv'))
 
-def get_csv(file_name,enc='utf-8',div=';'):
-    return [line.strip().split(div) for line in open(file_name,encoding=enc)]
-def print_csv(data):
-    for d in data:
-        print(d)
+import this
+
+#41. Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
