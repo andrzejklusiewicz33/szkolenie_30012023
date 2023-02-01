@@ -568,7 +568,7 @@
 # l1.extend(l2)
 # print(l1)
 
-#List<String> lista=....
+# List<String> lista=....
 #
 # x=1.5
 # x='whatever'
@@ -586,10 +586,10 @@
 # for e in l:
 #     print(e)
 
-#15. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# 15. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
 
-#pandas
+# pandas
 #
 # l=[]
 # for x in range(1,10):
@@ -651,11 +651,11 @@
 # print(przetworzone)
 
 
-#16. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+# 16. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
 #
 # l=[pow(2,e) for e in range(1,11)]
 # print(l)
-#print([pow(2,e) for e in range(1,11)])
+# print([pow(2,e) for e in range(1,11)])
 # import matplotlib.pyplot as plt
 # data=[pow(2,e) for e in range(1,11)]
 # plt.plot(data)
@@ -667,7 +667,7 @@
 # print(lista)
 # print(lista2)
 
-#matplotlib, seaborn
+# matplotlib, seaborn
 
 # import matplotlib.pyplot as plt
 # data=[pow(2,e) for e in range(1,11)]
@@ -679,11 +679,11 @@
 # plt.savefig('wykres.png')
 # plt.show()
 
-#17. Korzystając z list składanych wygeneruj listę 10 elementow której
+# 17. Korzystając z list składanych wygeneruj listę 10 elementow której
 # każdy element również będzie listą.
 # Pierwszy element tej podlisty to numer potegi,
 # a drugi to wartosc tej potegi dla liczby 2
-#[ [x,x*100] for x .... ]
+# [ [x,x*100] for x .... ]
 #
 # lista=[ [e,pow(2,e)] for e in range(1,11)]
 # print(lista)
@@ -696,15 +696,15 @@
 # print(list)
 # print(list[3],float(list[3])/2)
 
-#18. Napisz program który z pliku dane.csv wyświetli powiekszone
+# 18. Napisz program który z pliku dane.csv wyświetli powiekszone
 # imiona i nazwiska oraz wzrost i masę
-#list[2].lower()
+# list[2].lower()
 
 # for line in open('dane.csv',encoding='utf-8'):
 #     list=line.strip().split(';')
 #     print(list[1].upper(),list[2].upper(),list[3],list[4])
 
-#19. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv w taki sposób
+# 19. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv w taki sposób
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam
 # powinien byc listą. Następnie przeiteruj po wyniku i wyświetl wszystkie elementy
 # listy   linia po linii.
@@ -725,7 +725,7 @@
 # for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
 #     print(r[3],type(r[3]),float(r[3])/2)
 
-#20. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+# 20. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
 #
 # for r in [line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]:
@@ -786,8 +786,8 @@
 # #lista.sort()
 # kopia=sorted(lista)
 
-#21. Umieść w liście kwadraty losowych wartości z zakresu 1-100. Chcemy mieć w liście
-#50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
+# 21. Umieść w liście kwadraty losowych wartości z zakresu 1-100. Chcemy mieć w liście
+# 50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
 # Całą listę zaprezentuj na wykresie w postaci liniowej
 
 # import matplotlib.pyplot as plt
@@ -797,8 +797,8 @@
 # plt.plot(lista2)
 # plt.show()
 
-#anaconda, jupiter
-#import tensorflow
+# anaconda, jupiter
+# import tensorflow
 
 # def funkcja(x,y):
 #     print(x,y)
@@ -817,7 +817,7 @@
 #
 # funkcja(param1='cośtam',imie='Andrzej',waluta='PLN')
 
-#import time
+# import time
 
 # def mierzczas(fun):
 #     def wewnetrzna(*args,**kwargs):
@@ -831,7 +831,7 @@
 #     time.sleep(3)
 #     print('siema')
 
-#funkcja()
+# funkcja()
 
 # f=mierzczas(funkcja)
 # f()
@@ -842,8 +842,8 @@
 # plt.plot(osx,wartosci)
 # plt.show()
 
-#21. Umieść w liście kwadraty losowych wartości z zakresu 1-100. Chcemy mieć w liście
-#50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
+# 21. Umieść w liście kwadraty losowych wartości z zakresu 1-100. Chcemy mieć w liście
+# 50 elementów. Na konsoli wyświetl różnicę pomiędzy najwyższą a najniższą wartością w liście
 # Całą listę zaprezentuj na wykresie w postaci liniowej
 
 # import random
@@ -900,7 +900,7 @@
 # for e in lista:
 #     print(e)
 
-#22. Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# 22. Wczytaj do listy kolejne wiersze z pliku dane.csv.
 # Dane posortuj po masie malejąco i wyswietl linia po linii na konsoli.
 #
 # data=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
@@ -916,15 +916,15 @@
 # lista.sort()
 # print(lista)
 
-#przerwa do 10:25
+# przerwa do 10:25
 
-#23. Wyświetl na konsoli linia po linii dane z pliku dane.csv
+# 23. Wyświetl na konsoli linia po linii dane z pliku dane.csv
 # ale posortowane malejąco wg. bmi
 
-#przypisanie danych do listy
-#dodanie bmi do kazdego wiersza
-#sortujemy listę po bmi
-#iterujemy po liście wyswietlajac jej elementy
+# przypisanie danych do listy
+# dodanie bmi do kazdego wiersza
+# sortujemy listę po bmi
+# iterujemy po liście wyswietlajac jej elementy
 
 #
 # data=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
@@ -947,7 +947,7 @@
 # for w in os.walk("e:\\"):
 #     print(w[0])
 
-#24. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# 24. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną frazę
 # - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
 
@@ -1000,9 +1000,9 @@
 # text="email do mnie to klusiewicz@jsystems.pl jakbyście potrzebowali pomocy po szkoleniu"
 # print(re.findall("\w{1,}@\w{1,}\.[a-zA-Z]{2,4}",text))
 
-#pandas
+# pandas
 
-#przerwa do 11:29
+# przerwa do 11:29
 #
 # lista=[1,2,3,4]
 # krotka=(1,2,3,4)
@@ -1030,7 +1030,7 @@
 # print(posortowane)
 
 
-#25. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# 25. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
 # druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
 # Trzecią krotkę wypisz na konsoli posortowaną rosnąco.
 #
@@ -1044,7 +1044,7 @@
 # print(sorted(k3))
 # print(tuple(sorted(k3)))
 
-#26.Napisz kod ktory wyświetli w postaci listy krotek zawartość pliku dane.csv
+# 26.Napisz kod ktory wyświetli w postaci listy krotek zawartość pliku dane.csv
 
 # data=[tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
 # print(data)
@@ -1077,7 +1077,7 @@
 # if len(result)==0:
 #     print('jest pusta')
 
-#27. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# 27. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
 
 # import random
@@ -1100,10 +1100,10 @@
 # print("różnica z2-z1:",z2.difference(z1))
 
 
-#28. Zduplikuj jeden z wierszy w pliku dane.csv.
+# 28. Zduplikuj jeden z wierszy w pliku dane.csv.
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
 
-#unhashable type list
+# unhashable type list
 #
 # data=set([tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8') if ....])
 # print(data)
@@ -1111,7 +1111,7 @@
 #     print(d)
 
 
-#29. Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv znalazly się
+# 29. Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv znalazly się
 # dane z pliku dane.csv wzbogacone o obliczone BMI, bez duplikatów i rozwiązując problem
 # podania przecinka w miejsce kropki we wzroście i masie oraz problem z pustymi wierszami.
 
@@ -1134,7 +1134,7 @@
 # print(f"{lista[0]};{lista[1]};{lista[2]}")
 # print(";".join(lista))
 
-#29. Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv znalazly się
+# 29. Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv znalazly się
 # dane z pliku dane.csv wzbogacone o obliczone BMI, bez duplikatów i rozwiązując problem
 # podania przecinka w miejsce kropki we wzroście i masie oraz problem z pustymi wierszami.
 #
@@ -1173,7 +1173,7 @@
 # with open('output.csv',encoding='utf-8',mode='w') as file:
 #     for d in list(set([tuple(e) for e in data])): file.write(";".join(d)+"\n")
 
-#przerwa obiadowa do 13:25
+# przerwa obiadowa do 13:25
 
 # sl=dict()
 # sl['key1']='value 1'
@@ -1200,7 +1200,7 @@
 # for v in sl.values():
 #     print(v)
 
-#30. Stwórz plik config.conf i umieść w nim poniższe dane
+# 30. Stwórz plik config.conf i umieść w nim poniższe dane
 # encoding=utf-8
 # timezone=-2
 # color=black
@@ -1219,7 +1219,7 @@
 #
 # print(sl['encoding'])
 
-#31. Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone z
+# 31. Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone z
 # nazwiskiem rozdzielone spacja (powiększone obie wartości),
 # a cały wiersz znajdzie się w wartości
 #   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
@@ -1230,7 +1230,7 @@
 #
 # print(sl['BABKA KIEPSKA'])
 
-#32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# 32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
 # [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
 #    Wynik powinien byc posortowany malejąco wg ilosci wystapien
 #    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy.
@@ -1286,7 +1286,7 @@
 # end=time.time()
 # print(f'proces trwał {end-start}s')
 
-#przerwa do 14:38
+# przerwa do 14:38
 
 # import time
 # start=time.time()
@@ -1305,7 +1305,6 @@
 #     print('jest w słowniku')
 # else:
 #     print('nie ma w słowniku')
-
 
 
 #    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
@@ -1384,14 +1383,14 @@
 # result.sort(key=lambda r:r[1],reverse=True)
 # for e in result:  print(e)
 
-#import this
+# import this
 
-#33. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
+# 33. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
 
 # for x in range(-10,11):
 #     print(x,1/x)
 
-#GIL
+# GIL
 
 # print(1/0)
 # print('coś jeszcze')
@@ -1424,7 +1423,7 @@
 #     print('jakiś inny wyjątek...',e,type(e))
 # print('coś jeszcze')
 
-#34. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10
+# 34. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10
 # w taki sposob by w przypadku wyjatku nie przerywac dzialania petli
 # a po prostu wyswietlic na konsoli informację o błędzie i przejsc
 # do dalszego przetwarzania
@@ -1436,13 +1435,13 @@
 #         print(f'błąd dzielenia przez zero przy x={x}')
 
 
-#35. Przetwórz wszystkie wiersze z dane.csv wyswietlajac
+# 35. Przetwórz wszystkie wiersze z dane.csv wyswietlajac
 # na konsoli dane z wiersza wzbogacone o bmi.
 # Nie podmieniaj przecinków etc w tekscie.
 # W przypadku pojawienia się wyjątku na rzucaniu na floata wzrostu dla
 # któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku bledy.csv
 # wzbogacony o informację o rodzaju błędu
-#4;Andrzej;1,89;90;IOERROR
+# 4;Andrzej;1,89;90;IOERROR
 
 # for f in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
 #     try:
@@ -1493,11 +1492,11 @@
 # print(nazwa(1))
 # print(nazwa(4))
 
-#36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone
+# 36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone
 # do 2 miejsc po przecinku BMI. W przypadku pojawienia się wyjątku,
 # wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
 
-#return None
+# return None
 # def funkcja():
 #     pass
 #
@@ -1520,7 +1519,6 @@
 #
 # result=bmi(0,80)
 # print(result)
-
 
 
 # def bmi(height,weight):
@@ -1613,10 +1611,10 @@
 #     suma+=x
 #     print('whatever')
 
-#37.  Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
-  # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
-  # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8.
-  #Kolumny mają być rozdzielane znakiem podanym jako trzeci argument funkcji,
+# 37.  Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+# którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
+# podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8.
+# Kolumny mają być rozdzielane znakiem podanym jako trzeci argument funkcji,
 # a jeśli nie zostanie podany to ma przyjąć średnik
 
 # def get_csv(file_name,enc='utf-8',div=';'):
@@ -1637,10 +1635,10 @@
 #
 
 
-#38.   Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
- # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
- # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
- # poprzedniego i przekaz do nowo powstalej funkcji.
+# 38.   Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
+# przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
+# liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
+# poprzedniego i przekaz do nowo powstalej funkcji.
 
 # def get_csv(file_name,enc='utf-8',div=';'):
 #     print(f'file_name={file_name}')
@@ -1704,6 +1702,76 @@
 # koniec=time.time()
 # print(f'czas trwania {koniec-start}s')
 
-#39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty,
+# 39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty,
 # oprocentowanie w skali roku, ilosc miesięcy. Funkcja ma zwrócić zarobek
-# na lokacie o podanych parametrach
+# # # na lokacie o podanych parametrach
+# def lokata(kwota,opro,im):
+#     poczatkowo=kwota
+#     for m in range(1,im+1):
+#         kwota=round(kwota+(kwota*opro/12),2)
+#     return round(kwota-poczatkowo,2)
+# #
+# print(lokata(100000,0.08,24))
+#
+# print(10/3)
+
+#NUMPY
+
+#przerwa do 10:27
+
+# import tools
+# print( tools.dodawanie(1,2) )
+#
+# import tools as t
+# print( t.dodawanie(1,2) )
+
+#from operator import itemgetter
+
+# from tools import dodawanie
+# print(dodawanie(10,20))
+#
+# from tools import dodawanie,odejmowanie
+# print(dodawanie(10,20))
+# print(odejmowanie(10,5))
+
+
+# from tools import *
+# print(dodawanie(10,20))
+# print(odejmowanie(10,5))
+
+#
+# import training_dao as tdao
+# import invoice_dao as idao
+# print(tdao.get_all())
+# print(idao.get_all())
+
+# from invoice_dao import *
+# from training_dao import *
+# print(get_all())
+#
+# import training_dao
+# print(training_dao.x)
+
+# import dao.invoice_dao
+# import dao.training_dao
+# print(dao.invoice_dao.get_all())
+# print(dao.training_dao.get_all())
+#
+# import dao.invoice_dao as idao
+# import dao.training_dao as tdao
+# print(idao.get_all())
+# print(tdao.get_all())
+
+# from dao.invoice_dao import *
+# print(get_all())
+#
+#import dao.training_dao
+
+#40. Przenieś poniższe funkcje do modułu tools mieszczącego się w pakiecie csv_tools
+#Zaimportuj moduł i odbierz dane z jednej funkcji i przekaż do drugiej funkcji
+
+def get_csv(file_name,enc='utf-8',div=';'):
+    return [line.strip().split(div) for line in open(file_name,encoding=enc)]
+def print_csv(data):
+    for d in data:
+        print(d)
