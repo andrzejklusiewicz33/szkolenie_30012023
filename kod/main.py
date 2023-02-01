@@ -1971,3 +1971,5 @@
 # sql=f"delete from products where product_id={id}"
 # cursor.execute(sql)
 # connection.commit()
+
+#44. Załaduj do tabelki players wszystkie dane z pliku dane.csv
