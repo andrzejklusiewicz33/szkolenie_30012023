@@ -2136,3 +2136,18 @@
 # i w linii poniżej wyświetl na konsoli obliczone BMI - odczytane z metody get_bmi.
 
 #print(None/pow(None,2))
+
+class Player:
+    def __init__(self,height,weight):
+        self.height=height
+        self.weight=weight
+    def __str__(self):
+        return str(self.__dict__)
+    def get_bmi(self):
+        return round(self.weight/pow(self.height,2),2)
+
+p=Player(1.76,82)
+print(p)
+print(p.get_bmi())
+
+#klusiewicz@jsystems.pl
