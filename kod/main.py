@@ -2079,9 +2079,50 @@
 #46. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
 #Stwórz obiekt, uzupelnij go danymi i wyswietl jego zawartosc
+# class Samochod:
+#     '''pamiętaj o wywołaniu funkcji ustaw przed wywołaniem funkcji wyświetl'''
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+# 
+#     def ustaw(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+# 
+# 
+# s=Samochod()
+# s.ustaw('BMW','e46','BIA 12345')
+# s.wyswietl()
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def __init__(self,first_name,last_name):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#     def hello(self):
+#         print(f"hello I'm {self.first_name} {self.last_name}!")
+#
+# #p=Person()
+# p=Person('Andrzej','Klusiewicz')
+# p.hello()
+
+#47. Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól
+# przy tworzeniu obiektu. Stworz obiekt klasy Samochod i wywolaj na nim metode wyswietl
+
 class Samochod:
     marka=None
     model=None
     rejestracja=None
     def wyswietl(self):
         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+
+    def ustaw(self,marka,model,rejestracja):
+        self.marka=marka
+        self.model=model
+        self.rejestracja=rejestracja
+
